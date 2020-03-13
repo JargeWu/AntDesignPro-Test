@@ -98,7 +98,13 @@ export default {
           routes: [
             {
               path: '/',
-              redirect: '/welcome',
+              redirect: '/indexinfo',
+            },
+            {
+              name: '概览',
+              icon: 'smile',
+              path: '/indexinfo',
+              component: './indexinfo',
             },
             {
               path: '/welcome',
@@ -127,6 +133,12 @@ export default {
                   authority: ['admin'],
                 },
               ],
+            },
+            {
+              name: '个人设置',
+              icon: 'smile',
+              path: '/accountsettings',
+              component: './AccountSettings',
             },
             {
               component: './404',
